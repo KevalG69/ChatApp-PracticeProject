@@ -13,7 +13,7 @@ require("./Models/db.js")
 
 //-from Routes
 const AuthRouter = require("./routes/AuthRouter.js")
-
+const ProductRouter = require("./routes/ProductRouter.js")
 
 //creating app
 const app = express();
@@ -33,8 +33,7 @@ app.use(cors())
 
 //if url is /auth than route its to AuthRouter
 app.use("/auth",AuthRouter)
-
-
+app.use("/product",ProductRouter)
 
 
 //listening to requist at port 
