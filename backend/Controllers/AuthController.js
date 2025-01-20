@@ -13,7 +13,7 @@ const singUp = async (req,res)=>{
     {
         //extracting data from req.body
         const {name,email,password} = req.body;
-    
+        console.log("req.body",req.body)
         //checking if email already exist in database
         const user = await UserModel.findOne({email});
    

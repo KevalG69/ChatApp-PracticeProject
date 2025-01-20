@@ -15,10 +15,10 @@ const {singIn,singUp} = require("../Controllers/AuthController")
 
 
 //if requiest is post and url is Auth/singIn
-AuthRouter.post("/singin",singInValidator,singIn)
+AuthRouter.post("/signin",singInValidator,singIn)
 
 //if requiest is post and url is Aut/singUp
-AuthRouter.post("/singup",singUpValidator,singUp)
+AuthRouter.post("/signup",singUpValidator,singUp)
 
 
 module.exports = AuthRouter

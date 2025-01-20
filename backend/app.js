@@ -19,15 +19,15 @@ const ProductRouter = require("./routes/ProductRouter.js")
 const app = express();
 
 
+app.use(cors())
 //middleware
 app.use("/",(req,res,next)=>{
-    console.log(req.url,req.method,req.body);
+    console.log("-----------------",req.url,req.method,req.body);
     next();
 })
 
 //body parser
 app.use(bodyParser.json())
-app.use(cors())
 
 //Routetings\
 

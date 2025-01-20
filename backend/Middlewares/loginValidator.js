@@ -22,7 +22,7 @@ const singUpValidator = (req,res,next)=>{
     if(error)
     {
         return res.status(404)
-                .json({message:"Validation Error",error})
+                .json({message:"Validation Error",success:false,error})
     }
 
     //if there is no error then move it to next
